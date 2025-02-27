@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .phuket {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #000000;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4,.box5,.box6 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://image.made-in-china.com/202f0j00wJtQacWEVRzl/Factory-Hot-Sale-Card-Game-Set-for-Children-Kids.jpg");
+  }
+  .box2 {
+    background-image: url("https://images.fineartamerica.com/images-medium-large-5/2-jigsaw-puzzle-ktsdesignscience-photo-library.jpg");
+  }
+  .box3 {
+    background-image: url("https://i0.wp.com/brainboxgames.in/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-25-at-15.00.53.jpeg?fit=800%2C800&ssl=1");
+  }
+  .box4 {
+    background-image: url("https://nytco-assets.nytimes.com/2022/01/Screen-Shot-2022-01-30-at-10.05.09-PM.png");
+  }
+  .box5 {
+    background-image: url("https://www.uscybersecurity.net/wp-content/uploads/2019/03/Anto-Virus-Software-Deaily-Header-Image.jpg");
+  }
+  .box6 {
+    background-image: url("https://media.istockphoto.com/id/1344687455/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%9A%E0%B8%99-%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7.jpg?s=612x612&w=0&k=20&c=Qra5mX_TWSLHfGJ7IeAEmcAfwOvb-cohZiBJr-yz7o4=");
+  }
+  .phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .phuket p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  
